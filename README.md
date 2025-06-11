@@ -15,6 +15,8 @@
 
 Este proyecto nos muestra el funcionamiento de Estructuras Lineales como las con listas enlazadas conjunto con las pilas y las colas 
 
+![Figuras](DiagramaUML.png)
+
 ---
 
 ## 🚀 Ejecución
