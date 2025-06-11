@@ -16,20 +16,20 @@ public class ContactManager {
     }
 
     public Contact<?, ?> findContactByName(String name) {
+        Contact<?, ?> temp = new Contact<>(name, null);
         for (int i = 0; i < contacts.getSize(); i++) {
-            Contact<?, ?> c = contacts.get(i);
-            if (c.getName().equals(name)) {
-                return c;
+            if (contacts.get(i).equals(temp)) {
+                return contacts.get(i);
             }
         }
         return null;
     }
 
     public void deleteContactByName(String name) {
+        Contact<?, ?> temp = new Contact<>(name, null);
         for (int i = 0; i < contacts.getSize(); i++) {
-            Contact<?, ?> c = contacts.get(i);
-            if (c.getName().equals(name)) {
-                contacts.deleteByValue(c);
+            if (contacts.get(i).equals(temp)) {
+                contacts.deleteByValue(temp);
                 break;
             }
         }
